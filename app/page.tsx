@@ -40,6 +40,9 @@ export default function Home() {
               Contact
             </Link>
           </nav>
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+          </div>
         </div>
       </header>
       <main className="flex-1">
