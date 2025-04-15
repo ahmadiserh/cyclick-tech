@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container p-3 flex h-16 items-center justify-between">
+        <div className="container p-5 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <Logo />
             <span>Cyclic Technology</span>
@@ -68,11 +68,10 @@ export default function Home() {
                 </div>
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-7xl/none">
-                    We build digital <span className="text-black dark:text-white">experiences</span> that matter
+                  We turn ideas into reality<span className="text-black dark:text-white"> through</span> technology
                   </h1>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                    Cyclic Technology delivers cutting-edge solutions that transform how businesses operate in the
-                    digital landscape.
+                    At Cyclic Technology, we're more than developers — we're partners in innovation. We work with individuals, startups, and organizations to build digital experiences that matter — from full-stack web platforms to powerful mobile apps.
                   </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -83,9 +82,16 @@ export default function Home() {
                     Explore Solutions
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
-                  <Button size="lg" variant="outline" className="rounded-full">
+                  <Button
+                      as="a"
+                      href="mailto:ahmadisah6293@gmail.com"
+                      size="lg"
+                      variant="outline"
+                      className="rounded-full"
+                    >
                     Contact Us
                   </Button>
+
                 </div>
               </div>
               <div className="flex items-center justify-center">
@@ -113,12 +119,12 @@ export default function Home() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-start space-y-4">
               <div className="space-y-2 max-w-[600px]">
-                <div className="inline-flex items-center rounded-full border border-white/20 dark:border-black/20 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 w-fit">
+              <div className="inline-flex items-center rounded-full border border-white/20 dark:border-black/20 px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 w-fit">
                   Solutions
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">What we do</h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-white/70 dark:text-black/70">
-                  We create innovative solutions that drive business growth and transformation.
+                  We develop innovative solutions that empower businesses to achieve growth and drive meaningful transformation.
                 </p>
               </div>
             </div>
@@ -126,7 +132,7 @@ export default function Home() {
               {[
                 {
                   title: "Web Development",
-                  description: "Custom websites and web applications built with the latest technologies.",
+                  description: "Custom websites and web applications built using cutting-edge technologies.",
                 },
                 {
                   title: "Mobile Applications",
@@ -138,15 +144,15 @@ export default function Home() {
                 },
                 {
                   title: "Cloud Infrastructure",
-                  description: "Scalable and secure cloud solutions for your business needs.",
+                  description: "Scalable and secure cloud solutions tailored to your business needs.",
                 },
                 {
                   title: "UI/UX Design",
-                  description: "User-centered design that creates intuitive and engaging experiences.",
+                  description: "User-centered designs that create intuitive and engaging digital experiences.",
                 },
                 {
                   title: "Digital Strategy",
-                  description: "Strategic planning to maximize your digital presence and impact.",
+                  description: "Strategic planning to maximize your digital presence and drive impact.",
                 },
               ].map((solution, index) => (
                 <div
@@ -168,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* About Section */}
+       {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
             <div className="absolute top-0 left-0 h-[300px] w-[300px] rounded-full bg-black/5 dark:bg-white/5 blur-3xl"></div>
@@ -182,13 +188,10 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Story</h2>
                 <p className="text-muted-foreground md:text-xl">
-                  Founded by Ahmad Isah in 2025, Cyclic Technology began with a vision to transform how businesses
-                  leverage technology. What started as a small consulting firm has grown into a global technology leader
-                  with clients across multiple industries.
+                  Founded by Ahmad Isah in 2025, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
                 </p>
                 <p className="text-muted-foreground md:text-xl">
-                  Our mission is to empower organizations with innovative solutions that drive growth, efficiency, and
-                  competitive advantage in an increasingly digital world.
+                  Our mission is to empower organizations with cutting-edge, scalable software solutions that fuel growth, boost efficiency, and deliver a competitive edge in today’s digital landscape.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
                   <Button variant="outline" className="rounded-full inline-flex items-center">
@@ -207,8 +210,7 @@ export default function Home() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="h-2/5 w-2/5 flex flex-col items-center justify-center text-center p-6">
                     <p className="text-sm text-muted-foreground mb-4">
-                      "Our goal is to create technology that makes a meaningful difference in how businesses operate and
-                      serve their customers."
+                      "Our goal is to create technology that makes a meaningful difference in how businesses operate and serve their customers."
                     </p>
                     <div className="flex flex-col items-center">
                       <div className="size-16 mb-2 flex items-center justify-center">
@@ -234,7 +236,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Featured Projects</h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Explore our latest projects and see how we've helped businesses transform their digital presence.
+                  Explore our latest projects and see how we've helped businesses transform their digital presence through innovative software solutions.
                 </p>
               </div>
             </div>
@@ -289,7 +291,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet the Experts</h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Our talented team of professionals is dedicated to delivering exceptional results.
+                  Our talented team of professionals is dedicated to delivering exceptional results that help businesses grow and succeed.
                 </p>
               </div>
             </div>
@@ -298,7 +300,7 @@ export default function Home() {
                 {
                   name: "Ahmad Isah",
                   role: "Founder & CEO",
-                  bio: "Visionary leader with 15+ years in technology innovation",
+                  bio: "Visionary leader with 5+ years in technology innovation",
                 },
                 {
                   name: "Abubakar Ibramin",
@@ -311,10 +313,10 @@ export default function Home() {
                   bio: "Product strategist focused on user-centered solutions",
                 },
                 {
-                  "name": "Amatullahi Umar",
-                  "role": "Research and Documentation",
-                  "bio": "Skilled in technical research, documentation, and knowledge management"
-                }                
+                  name: "Amatullahi Umar",
+                  role: "Research and Documentation",
+                  bio: "Skilled in technical research, documentation, and knowledge management"
+                }
               ].map((member, index) => (
                 <div
                   key={index}
@@ -346,8 +348,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Get in Touch</h2>
                 <p className="text-white/70 dark:text-black/70 md:text-xl">
-                  Have questions about our services? Contact us today and discover how Cyclic Technology can transform
-                  your business.
+                  Have questions about our services? Contact us today and discover how Cyclic Technology can transform your business.
                 </p>
                 <div className="flex flex-col space-y-2 pt-4">
                   <p className="text-white/70 dark:text-black/70">ahmadisah6293@gmail.com</p>
@@ -398,29 +399,30 @@ export default function Home() {
             </div>
           </div>
         </section>
-      </main>
-      <footer className="w-full border-t py-6 md:py-0">
-        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-          <div className="flex items-center gap-2 font-bold">
-            <Logo size="small" />
-            <span>Cyclic Technology</span>
+
+        {/* Footer Section */}
+        <footer className="w-full border-t py-6 md:py-0">
+          <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+            <div className="flex items-center gap-2 font-bold">
+              <Logo size="small" />
+              <span>Cyclic Technology</span>
+            </div>
+            <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
+              © {new Date().getFullYear()} Cyclic Technology. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
+                Terms
+              </Link>
+              <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
+                Privacy
+              </Link>
+              <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
+                Contact
+              </Link>
+            </div>
           </div>
-          <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © {new Date().getFullYear()} Cyclic Technology. All rights reserved.
-          </p>
-          <div className="flex items-center gap-4">
-            <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
-              Terms
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
-              Privacy
-            </Link>
-            <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
-              Contact
-            </Link>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
   )
 }
