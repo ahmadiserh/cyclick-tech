@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between">
+        <div className="container p-3 flex h-16 items-center justify-between">
           <div className="flex items-center gap-2 font-bold">
             <Logo />
             <span>Cyclic Technology</span>
@@ -182,7 +182,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Story</h2>
                 <p className="text-muted-foreground md:text-xl">
-                  Founded by Ahmad Isah in 2018, Cyclic Technology began with a vision to transform how businesses
+                  Founded by Ahmad Isah in 2025, Cyclic Technology began with a vision to transform how businesses
                   leverage technology. What started as a small consulting firm has grown into a global technology leader
                   with clients across multiple industries.
                 </p>
@@ -301,20 +301,20 @@ export default function Home() {
                   bio: "Visionary leader with 15+ years in technology innovation",
                 },
                 {
-                  name: "Sarah Johnson",
-                  role: "CTO",
-                  bio: "Expert in cloud architecture and system design",
+                  name: "Abubakar Ibramin",
+                  role: "Lead Developer",
+                  bio: "Full-stack developer specializing in scalable applications",
                 },
                 {
-                  name: "Michael Chen",
+                  name: "Abbas Usman",
                   role: "Head of Product",
                   bio: "Product strategist focused on user-centered solutions",
                 },
                 {
-                  name: "Aisha Patel",
-                  role: "Lead Developer",
-                  bio: "Full-stack developer specializing in scalable applications",
-                },
+                  "name": "Amatullahi Umar",
+                  "role": "Research and Documentation",
+                  "bio": "Skilled in technical research, documentation, and knowledge management"
+                }                
               ].map((member, index) => (
                 <div
                   key={index}
@@ -350,8 +350,8 @@ export default function Home() {
                   your business.
                 </p>
                 <div className="flex flex-col space-y-2 pt-4">
-                  <p className="text-white/70 dark:text-black/70">hello@cyclictech.com</p>
-                  <p className="text-white/70 dark:text-black/70">+1 (555) 123-4567</p>
+                  <p className="text-white/70 dark:text-black/70">ahmadisah6293@gmail.com</p>
+                  <p className="text-white/70 dark:text-black/70">+234 8061939536</p>
                 </div>
               </div>
               <div className="space-y-4">
@@ -406,7 +406,7 @@ export default function Home() {
             <span>Cyclic Technology</span>
           </div>
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-            © 2025 Cyclic Technology. All rights reserved.
+            © {new Date().getFullYear()} Cyclic Technology. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-sm font-medium hover:text-black dark:hover:text-white transition-colors">
