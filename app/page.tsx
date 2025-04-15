@@ -295,7 +295,7 @@ export default function Home() {
                   bio: "Visionary leader with 5+ years in technology innovation",
                 },
                 {
-                  name: "Abubakar Ibramin",
+                  name: "Abubakar Ibrahim",
                   role: "Lead Developer",
                   bio: "Full-stack developer specializing in scalable applications",
                 },
