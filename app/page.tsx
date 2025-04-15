@@ -40,17 +40,6 @@ export default function Home() {
               Contact
             </Link>
           </nav>
-          <div className="flex items-center gap-4">
-            <ThemeToggle />
-            <Button variant="outline" className="rounded-full">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-5 w-5" />
-              <span className="sr-only">Toggle menu</span>
-            </Button>
-          </div>
         </div>
       </header>
       <main className="flex-1">
