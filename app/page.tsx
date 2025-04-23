@@ -180,7 +180,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Story</h2>
                 <p className="text-muted-foreground md:text-xl">
-                  Founded by Ahmad Isah in 2025, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
+                  Founded in 2025 by Co-Founders &amp; Co-CEOs Ahmad Isah and Abubakar Ibrahim, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
                 </p>
                 <p className="text-muted-foreground md:text-xl">
                   Our mission is to empower organizations with cutting-edge, scalable software solutions that fuel growth, boost efficiency, and deliver a competitive edge in today’s digital landscape.
@@ -200,16 +200,53 @@ export default function Home() {
                   <div className="h-3/5 w-3/5 bg-black/5 dark:bg-white/5 rounded-full"></div>
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="h-2/5 w-2/5 flex flex-col items-center justify-center text-center p-6">
-                    <p className="text-sm text-muted-foreground mb-4">
-                      "Our goal is to create technology that makes a meaningful difference in how businesses operate and serve their customers."
-                    </p>
-                    <div className="flex flex-col items-center">
-                      <div className="size-16 mb-2 flex items-center justify-center">
-                        <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
+                  <div className="flex gap-6">
+                    {/* Ahmad */}
+                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
+                      <p className="text-sm text-muted-foreground mb-4">
+                        "Our goal is to create technology that makes a meaningful difference in how businesses operate and serve their customers."
+                      </p>
+                      <div className="flex flex-col items-center">
+                        <div className="size-16 mb-2 flex items-center justify-center">
+                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
+                        </div>
+                        <h3 className="text-sm font-medium">Ahmad Isah</h3>
+                        <p className="text-xs text-muted-foreground">
+                          Co-Founder & Co-CEO | Backend Developer
+                        </p>
                       </div>
-                      <h3 className="text-sm font-medium">Ahmad Isah</h3>
-                      <p className="text-xs text-muted-foreground">Founder & CEO</p>
+                    </div>
+
+                    {/* Abubakar */}
+                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
+                      <p className="text-sm text-muted-foreground mb-4">
+                        "Building scalable solutions that empower businesses to grow and adapt in a digital world."
+                      </p>
+                      <div className="flex flex-col items-center">
+                        <div className="size-16 mb-2 flex items-center justify-center">
+                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
+                        </div>
+                        <h3 className="text-sm font-medium">Abubakar Ibrahim</h3>
+                        <p className="text-xs text-muted-foreground">
+                          Co-Founder & Co-CEO | Lead Developer
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Abbas */}
+                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
+                      <p className="text-sm text-muted-foreground mb-4">
+                        "We put users at the heart of everything we build—crafting products that feel intuitive and solve real problems."
+                      </p>
+                      <div className="flex flex-col items-center">
+                        <div className="size-16 mb-2 flex items-center justify-center">
+                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
+                        </div>
+                        <h3 className="text-sm font-medium">Abbas Usman</h3>
+                        <p className="text-xs text-muted-foreground">
+                          Co-Founder & Co-CEO | Head of Product
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -291,24 +328,24 @@ export default function Home() {
               {[
                 {
                   name: "Ahmad Isah",
-                  role: "Founder & CEO",
-                  bio: "Visionary leader with 5+ years in technology innovation",
+                  role: "Co-Founder & Co-CEO | Backend Developer",
+                  bio: "Visionary leader and backend developer with 5+ years in technology innovation."
                 },
                 {
                   name: "Abubakar Ibrahim",
-                  role: "Lead Developer",
-                  bio: "Full-stack developer specializing in scalable applications",
+                  role: "Co-Founder & Co-CEO | Lead Developer",
+                  bio: "Co-CEO and full-stack lead developer specializing in scalable applications."
                 },
                 {
                   name: "Abbas Usman",
-                  role: "Head of Product",
-                  bio: "Product strategist focused on user-centered solutions",
-                },
-                {
-                  name: "Amatullahi Umar",
-                  role: "Research and Documentation",
-                  bio: "Skilled in technical research, documentation, and knowledge management"
-                }
+                  role: "Co-Founder & Co-CEO | Head of Product",
+                  bio: "Co-CEO and product strategist focused on user-centered solutions."
+                },              
+                // {
+                //   name: "Amatullahi Umar",
+                //   role: "Research and Documentation",
+                //   bio: "Skilled in technical research, documentation, and knowledge management"
+                // }
               ].map((member, index) => (
                 <div
                   key={index}
@@ -343,8 +380,8 @@ export default function Home() {
                   Have questions about our services? Contact us today and discover how Cyclic Technology can transform your business.
                 </p>
                 <div className="flex flex-col space-y-2 pt-4">
-                  <p className="text-white/70 dark:text-black/70">ahmadisah6293@gmail.com</p>
-                  <p className="text-white/70 dark:text-black/70">+234 8061939536</p>
+                  <p className="text-white/70 dark:text-black/70">email@example.com</p>
+                  <p className="text-white/70 dark:text-black/70">(123) 456-7890</p>
                 </div>
               </div>
               <div className="space-y-4">
