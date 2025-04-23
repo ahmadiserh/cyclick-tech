@@ -200,7 +200,7 @@ export default function Home() {
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Story</h2>
                 <p className="text-muted-foreground md:text-lg">
-                  Founded in 2025 by Co-Founders &amp; Co-CEOs Ahmad Isah and Abubakar Ibrahim and Abbas Usman, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
+                  Founded in 2025 by Co-Founders &amp; Co-CEOs Ahmad Isah, Abubakar Ibrahim and Abbas Usman, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
                 </p>
                 <p className="text-muted-foreground md:text-lg">
                   Our mission is to empower organizations with cutting-edge, scalable software solutions that fuel growth, boost efficiency, and deliver a competitive edge in today’s digital landscape.
