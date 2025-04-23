@@ -199,39 +199,33 @@ export default function Home() {
                   About Us
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Our Story</h2>
-                <p className="text-muted-foreground md:text-xl">
-                  Founded in 2025 by Co-Founders &amp; Co-CEOs Ahmad Isah and Abubakar Ibrahim, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
+                <p className="text-muted-foreground md:text-lg">
+                  Founded in 2025 by Co-Founders &amp; Co-CEOs Ahmad Isah and Abubakar Ibrahim and Abbas Usman, Cyclic Technology was born from a drive to transform how businesses harness technology through innovative programming and software development. What began as a small consulting firm has evolved into a trusted technology partner for projects across diverse industries.
                 </p>
-                <p className="text-muted-foreground md:text-xl">
+                <p className="text-muted-foreground md:text-lg">
                   Our mission is to empower organizations with cutting-edge, scalable software solutions that fuel growth, boost efficiency, and deliver a competitive edge in today’s digital landscape.
                 </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
-                  <Button variant="outline" className="rounded-full inline-flex items-center">
-                    Learn More
-                    <ChevronRight className="ml-1 h-4 w-4" />
-                  </Button>
-                </div>
               </div>
 
-              {/* Quotes Grid (mapped) */}
-              <div className="relative aspect-square w-full max-w-[500px] mx-auto">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-                    {teamQuotes.map(({ name, title, text }) => (
-                      <figure key={name} className="p-6 text-center">
-                        <blockquote className="text-sm text-muted-foreground mb-4">
-                          “{text}”
-                        </blockquote>
-                        <figcaption>
-                          <h3 className="text-sm font-medium">{name}</h3>
-                          <p className="text-xs text-muted-foreground">{title}</p>
-                        </figcaption>
-                      </figure>
-                    ))}
-                  </div>
+              {/* Quotes Row (expanded) */}
+              <div className="w-full">
+                <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                  {teamQuotes.map(({ name, title, text }) => (
+                    <figure
+                      key={name}
+                      className="p-8 text-center bg-white/5 dark:bg-black/5 rounded-lg"
+                    >
+                      <blockquote className="text-base text-muted-foreground mb-4">
+                        “{text}”
+                      </blockquote>
+                      <figcaption>
+                        <h3 className="text-base font-medium">{name}</h3>
+                        <p className="text-sm text-muted-foreground">{title}</p>
+                      </figcaption>
+                    </figure>
+                  ))}
                 </div>
               </div>
-
             </div>
           </div>
         </section>
