@@ -1,9 +1,27 @@
 import Link from "next/link"
-import { ArrowRight, ArrowUpRight, ChevronRight, Menu } from "lucide-react"
+import { ArrowRight, ArrowUpRight, ChevronRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Logo } from "@/components/logo"
+
+const teamQuotes = [
+  {
+    name: "Ahmad Isah",
+    title: "Co-Founder & Co-CEO | Backend Developer",
+    text: "Our goal is to create technology that makes a meaningful difference in how businesses operate and serve their customers."
+  },
+  {
+    name: "Abubakar Ibrahim",
+    title: "Co-Founder & Co-CEO | Lead Developer",
+    text: "Building scalable solutions that empower businesses to grow and adapt in a digital world."
+  },
+  {
+    name: "Abbas Usman",
+    title: "Co-Founder & Co-CEO | Head of Product",
+    text: "We put users at the heart of everything we build—crafting products that feel intuitive and solve real problems."
+  }
+];
 
 export default function Home() {
   return (
@@ -166,14 +184,16 @@ export default function Home() {
           </div>
         </section>
 
-       {/* About Section */}
+        {/* About Section */}
         <section id="about" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
           <div className="absolute inset-0 -z-10">
-            <div className="absolute top-0 left-0 h-[300px] w-[300px] rounded-full bg-black/5 dark:bg-white/5 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 h-[300px] w-[300px] rounded-full bg-black/5 dark:bg-white/5 blur-3xl"></div>
+            <div className="absolute top-0 left-0 h-[300px] w-[300px] rounded-full bg-black/5 dark:bg-white/5 blur-3xl" aria-hidden="true" />
+            <div className="absolute bottom-0 right-0 h-[300px] w-[300px] rounded-full bg-black/5 dark:bg-white/5 blur-3xl" aria-hidden="true" />
           </div>
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              
+              {/* Text Column */}
               <div className="space-y-4">
                 <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 w-fit">
                   About Us
@@ -192,65 +212,26 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
+
+              {/* Quotes Grid (mapped) */}
               <div className="relative aspect-square w-full max-w-[500px] mx-auto">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="h-4/5 w-4/5 rounded-full border border-black/20 dark:border-white/20"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="h-3/5 w-3/5 bg-black/5 dark:bg-white/5 rounded-full"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="flex gap-6">
-                    {/* Ahmad */}
-                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
-                      <p className="text-sm text-muted-foreground mb-4">
-                        "Our goal is to create technology that makes a meaningful difference in how businesses operate and serve their customers."
-                      </p>
-                      <div className="flex flex-col items-center">
-                        <div className="size-16 mb-2 flex items-center justify-center">
-                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
-                        </div>
-                        <h3 className="text-sm font-medium">Ahmad Isah</h3>
-                        <p className="text-xs text-muted-foreground">
-                          Co-Founder & Co-CEO | Backend Developer
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Abubakar */}
-                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
-                      <p className="text-sm text-muted-foreground mb-4">
-                        "Building scalable solutions that empower businesses to grow and adapt in a digital world."
-                      </p>
-                      <div className="flex flex-col items-center">
-                        <div className="size-16 mb-2 flex items-center justify-center">
-                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
-                        </div>
-                        <h3 className="text-sm font-medium">Abubakar Ibrahim</h3>
-                        <p className="text-xs text-muted-foreground">
-                          Co-Founder & Co-CEO | Lead Developer
-                        </p>
-                      </div>
-                    </div>
-
-                    {/* Abbas */}
-                    <div className="h-2/5 w-1/3 flex flex-col items-center justify-center text-center p-6">
-                      <p className="text-sm text-muted-foreground mb-4">
-                        "We put users at the heart of everything we build—crafting products that feel intuitive and solve real problems."
-                      </p>
-                      <div className="flex flex-col items-center">
-                        <div className="size-16 mb-2 flex items-center justify-center">
-                          <div className="size-12 bg-black/10 dark:bg-white/10 rounded-full"></div>
-                        </div>
-                        <h3 className="text-sm font-medium">Abbas Usman</h3>
-                        <p className="text-xs text-muted-foreground">
-                          Co-Founder & Co-CEO | Head of Product
-                        </p>
-                      </div>
-                    </div>
+                  <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {teamQuotes.map(({ name, title, text }) => (
+                      <figure key={name} className="p-6 text-center">
+                        <blockquote className="text-sm text-muted-foreground mb-4">
+                          “{text}”
+                        </blockquote>
+                        <figcaption>
+                          <h3 className="text-sm font-medium">{name}</h3>
+                          <p className="text-xs text-muted-foreground">{title}</p>
+                        </figcaption>
+                      </figure>
+                    ))}
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </section>
